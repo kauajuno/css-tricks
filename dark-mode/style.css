@@ -1,0 +1,79 @@
+body{
+    --bg-color: #FFFFFF;
+    --font-color: #1A1A1A;
+
+    margin: 0;
+
+    background-color: var(--bg-color);
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    padding: 2rem;
+    text-align: center;
+    border-bottom: var(--font-color) 1px solid;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+.container{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+.child{
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    border-radius: 1rem;
+    border: var(--font-color) 2px solid;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.dark-mode{
+    --bg-color: #1A1A1A;
+}
+
+.dark-mode>header{
+    --bg-color: #1A1A1A;
+    --font-color: #FFFFFF;
+}
+
+.dark-mode>.container>.child{
+    --bg-color: #3A3A3A;
+    --font-color: #FFFFFF;
+}
+
+.button-container{
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#toggle-button {
+    background-color: var(--bg-color); /* Green */
+    border: 1px solid var(--font-color);
+    color: var(--font-color);
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.dark-mode>.button-container>#toggle-button{
+    --bg-color: #1A1A1A;
+    --font-color: #FFFFFF;
+}
