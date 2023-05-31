@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #D8E2DC;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #FFF;
+    margin-left: 1rem;
+}
+
+header{
+    background-color: #1A1A1A;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+header .logo{
+    font-size: 2rem;
+    color: #F4ACB7;
+    font-family: 'Mate SC', serif;
+}
+
+#scroller *{
+    overflow-anchor: none;
+}
+
+#anchor{
+    overflow-anchor: auto;
+    height: 1px;
+}
+
+.lyric {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
